@@ -116,7 +116,7 @@ s.pEQUIP = se.recnum'''
     def GetOSiData(self):
         if self.osidata is None:
             dbinfo = teppwcore(self.domain)
-            self.osidata = tepcoredata('ELECTRA',self.dbinfo.GetPwd('ELECTRA'),self.dbinfo.GetDSNInKeePass('ELECTRA'),True,True,self.dsn)  
+            self.osidata = tepcoredata('OSIDATA',self.dbinfo.GetPwd('OSIDATA'),self.dbinfo.GetDSNInKeePass('OSIDATA'),True,True,self.dsn)  
         return self.osidata
     def FetchAllScadaData(self):
         retdf = None
