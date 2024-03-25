@@ -1,0 +1,36 @@
+{
+  "warningemailuser":"rcatlin@tep.com",
+  "recevingemaillist":"rcatlin@tep.com",
+  "tepbreakertemplate":"Circuit Breaker- TEP",
+  "tepsubstationtemplate": "Substation - TEP",
+  "tepregiontemplate":"Region Settings",
+  "domain":"test",
+  "outputafserver":"DEMO",
+  "outpiafserver":"ESPWDPI01",
+  "areaaormaps": [
+        {
+          "areaname": "Tucson",
+          "areaaor": "DISTR",
+          "areaaorname": "Distribution",
+          "areasource": "DMS",
+          "parenttemplatename": "Substation - TEP",
+          "breakertemplate": "Circuit Breaker- TEP"
+        },
+         {
+          "areaname": "Tucson",
+          "areaaor": "TRANS",
+          "areaaorname": "Transmission",
+          "areasource": "EMS",
+          "parenttemplatename": "Substation - TEP",
+          "breakertemplate": "Circuit Breaker- TEP"
+        },
+         {
+          "areaname": "Kingman",
+          "areaaor": "KGM",
+          "areaaorname": "Distribution",
+          "areasource": "DMS",
+          "parenttemplatename": "Substation - UES",
+          "breakertemplate": "Circuit Breaker- UES"
+        }
+      ]
+}
