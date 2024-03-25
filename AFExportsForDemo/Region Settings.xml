@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.10.11.2717" ExportMode="AllReferences, DefaultValues, Security, Flat, SimplifiedConfigStrings" PISystem="ESPWDPI01" Database="DEMO" Description="" Created="2024-03-25T15:06:10.3236882Z" id="924463b7-b004-493a-afd2-247893b58b37" ParentKey="64ca14eb-457a-4abe-bf4b-a8422808f8bc" ExportedObject="Region Settings" ExportedType="AFElementTemplate" Identity="ElementTemplate" PIPersist="189 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{c375c94f-49f2-45ac-8fcb-12ba9f83e9e3}\ElementTemplates[{924463b7-b004-493a-afd2-247893b58b37}]*ESPWDPI01\DEMO\ElementTemplates[Region Settings]">
+  <AFSecurityIdentity>
+    <id>04044e48-3f91-498e-956c-95cc73c3f886</id>
+    <Name>Administrators</Name>
+    <Description>Administrator security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>7eb0e507-fe9d-4c32-9ff0-8ff1ac7ad8ea</id>
+    <Name>World</Name>
+    <Description>World security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>fcacd410-946f-46dc-9932-705649873de8</id>
+    <Name>NT AUTHORITY\NETWORK SERVICE</Name>
+    <Description />
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>790bb16a-9a2c-4ec0-8a70-ce9a96dafc49</id>
+    <Name>Asset Analytics</Name>
+    <Description>PI Analysis Service security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>a0342142-4854-42a9-bff0-523ca50f27cd</id>
+    <Name>Notifications</Name>
+    <Description>PI Notifications Service security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>00fc2a26-44df-4a76-bdbd-7353604cae0d</id>
+    <Name>Asset Analytics Recalculation</Name>
+    <Description>PI Analysis Service recalculation/backfilling security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>6e2f44e6-6071-4db2-a6bf-56824e88093c</id>
+    <Name>PIAFandAnalyticsEditors</Name>
+    <Description>users that can edit AF structures and analytics</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>72c1ab8f-9ff0-4c60-a1ca-6ab5f038dae4</id>
+    <Name>RTQP Engine</Name>
+    <Description>RTQP Engine security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>b5f057c3-d7d6-4f53-9182-7adddc5be3c2</id>
+    <Name>UNISOURCE\SOC_Unrestricted</Name>
+    <Description />
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFElementTemplate>
+    <id>924463b7-b004-493a-afd2-247893b58b37</id>
+    <Name>Region Settings</Name>
+    <Description />
+    <BaseTemplateOnly>false</BaseTemplateOnly>
+    <BaseTemplate />
+    <Type>None</Type>
+    <InstanceType>Element</InstanceType>
+    <AllowElementToExtend>true</AllowElementToExtend>
+    <DefaultAttribute />
+    <NamingPattern />
+    <DefaultInputPort />
+    <DefaultOutputPort />
+    <DefaultUndirectedPort />
+    <AFAttributeTemplate>
+      <id>8edfa0d5-a1e0-463a-87b6-178b81273146</id>
+      <Name>DOMAIN</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">PROD</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>cbdd4c28-8e75-4759-a536-47cc2f5d8993</id>
+      <Name>OSISYSTEM</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">DMS</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|World:A(r,rd)|NT AUTHORITY\NETWORK SERVICE:A(r,w,rd,wd,x,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|Asset Analytics Recalculation:A(x)|PIAFandAnalyticsEditors:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)</SecurityAccessControl>
+  </AFElementTemplate>
+</AF>

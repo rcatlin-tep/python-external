@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.10.11.2717" ExportMode="AllReferences, DefaultValues, Security, Flat, SimplifiedConfigStrings" PISystem="ESPWDPI01" Database="DEMO" Description="" Created="2024-03-25T16:50:01.3014241Z" id="4c51260f-653b-4900-8eb1-b0c377607f31" ParentKey="64ca14eb-457a-4abe-bf4b-a8422808f8bc" ExportedObject="PISERVER" ExportedType="AFElementTemplate" Identity="ElementTemplate" PIPersist="182 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{c375c94f-49f2-45ac-8fcb-12ba9f83e9e3}\ElementTemplates[{4c51260f-653b-4900-8eb1-b0c377607f31}]*ESPWDPI01\DEMO\ElementTemplates[PISERVER]">
+  <AFSecurityIdentity>
+    <id>04044e48-3f91-498e-956c-95cc73c3f886</id>
+    <Name>Administrators</Name>
+    <Description>Administrator security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>20bdec96-44e8-4730-9714-70f528779fa0</id>
+    <Name>Engineers</Name>
+    <Description>Engineer security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>7eb0e507-fe9d-4c32-9ff0-8ff1ac7ad8ea</id>
+    <Name>World</Name>
+    <Description>World security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFElementTemplate>
+    <id>4c51260f-653b-4900-8eb1-b0c377607f31</id>
+    <Name>PISERVER</Name>
+    <Description />
+    <BaseTemplateOnly>false</BaseTemplateOnly>
+    <BaseTemplate />
+    <Type>None</Type>
+    <InstanceType>Element</InstanceType>
+    <AllowElementToExtend>false</AllowElementToExtend>
+    <DefaultAttribute />
+    <NamingPattern />
+    <DefaultInputPort />
+    <DefaultOutputPort />
+    <DefaultUndirectedPort />
+    <AFAttributeTemplate>
+      <id>4bd1f840-bf9a-4d6a-94ba-9375f6f3242d</id>
+      <Name>PISERVER</Name>
+      <Description>PISERVER</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">SECPIDEV</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|Engineers:A(r,w,rd,wd,d,x,s,so,an)|World:A(r,rd)</SecurityAccessControl>
+  </AFElementTemplate>
+</AF>

@@ -1,0 +1,1247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.10.11.2717" ExportMode="AllReferences, DefaultValues, Security, Flat, SimplifiedConfigStrings" PISystem="ESPWDPI01" Database="DEMO" Description="" Created="2024-03-25T15:06:39.3016192Z" id="b918f0a5-ca12-410a-8fb7-1d90632978d0" ParentKey="64ca14eb-457a-4abe-bf4b-a8422808f8bc" ExportedObject="Circuit Breaker- UES" ExportedType="AFElementTemplate" Identity="ElementTemplate" PIPersist="194 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{c375c94f-49f2-45ac-8fcb-12ba9f83e9e3}\ElementTemplates[{b918f0a5-ca12-410a-8fb7-1d90632978d0}]*ESPWDPI01\DEMO\ElementTemplates[Circuit Breaker- UES]">
+  <AFSecurityIdentity>
+    <id>04044e48-3f91-498e-956c-95cc73c3f886</id>
+    <Name>Administrators</Name>
+    <Description>Administrator security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>7eb0e507-fe9d-4c32-9ff0-8ff1ac7ad8ea</id>
+    <Name>World</Name>
+    <Description>World security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>efc9c1ab-e0e4-441c-952e-0b4adb9ab4ca</id>
+    <Name>S-1-5-21-72571714-2141340450-2786885715-1007</Name>
+    <Description />
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>d551c4b5-8364-4304-8a0d-c2fdf3ea451b</id>
+    <Name>S-1-5-21-72571714-2141340450-2786885715-1008</Name>
+    <Description />
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>fcacd410-946f-46dc-9932-705649873de8</id>
+    <Name>NT AUTHORITY\NETWORK SERVICE</Name>
+    <Description />
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>790bb16a-9a2c-4ec0-8a70-ce9a96dafc49</id>
+    <Name>Asset Analytics</Name>
+    <Description>PI Analysis Service security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>a0342142-4854-42a9-bff0-523ca50f27cd</id>
+    <Name>Notifications</Name>
+    <Description>PI Notifications Service security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>00fc2a26-44df-4a76-bdbd-7353604cae0d</id>
+    <Name>Asset Analytics Recalculation</Name>
+    <Description>PI Analysis Service recalculation/backfilling security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>6e2f44e6-6071-4db2-a6bf-56824e88093c</id>
+    <Name>PIAFandAnalyticsEditors</Name>
+    <Description>users that can edit AF structures and analytics</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>72c1ab8f-9ff0-4c60-a1ca-6ab5f038dae4</id>
+    <Name>RTQP Engine</Name>
+    <Description>RTQP Engine security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>b5f057c3-d7d6-4f53-9182-7adddc5be3c2</id>
+    <Name>UNISOURCE\SOC_Unrestricted</Name>
+    <Description />
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>577ff210-4840-4f02-abeb-224960731c8a</id>
+    <Name>UNISOURCE\SOC_Restricted</Name>
+    <Description>Wholesale Marketing Empolyees</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>48fd5454-d996-4b38-83b4-7734455b36fb</id>
+    <Name>Asset Analytics Writers</Name>
+    <Description>Asset AF Analytics Write Priv</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFAnalysisCategory>
+    <id>a3369775-e056-4dcb-8bfe-58e05c255d8c</id>
+    <Name>CircuitKPI</Name>
+    <Description />
+    <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|World:A(r,rd)|S-1-5-21-72571714-2141340450-2786885715-1007:A(r,w,rd,wd,d,a,an)|S-1-5-21-72571714-2141340450-2786885715-1008:A(r,w,rd,wd,d,a,an)|NT AUTHORITY\NETWORK SERVICE:A(r,w,rd,wd,x,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|Asset Analytics Recalculation:A(x)|PIAFandAnalyticsEditors:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)</SecurityAccessControl>
+  </AFAnalysisCategory>
+  <AFEnumerationSet>
+    <id>2c828182-3467-4591-9cf8-136e7688bf8c</id>
+    <Name>Company</Name>
+    <Description />
+    <AFEnumerationValue>
+      <id>fed6f8cb-46d4-46ba-a357-96e143dd3e4a</id>
+      <Name>APC</Name>
+      <Value>5</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>7673944f-8399-41c9-aed2-dd266ba2a760</id>
+      <Name>APS</Name>
+      <Value>6</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>0f6cc13a-cc96-40f3-87d6-62cbfe1bf9d3</id>
+      <Name>EPE</Name>
+      <Value>7</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>84b560ce-9bdc-472d-b528-560f0b8265b5</id>
+      <Name>PNM</Name>
+      <Value>4</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>efeb3621-0daa-4536-ad2c-0fa26ea661c0</id>
+      <Name>SRP</Name>
+      <Value>8</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>60c8ca65-6bc8-4f8f-8461-351d863e96a1</id>
+      <Name>Tucson Electric Power</Name>
+      <Value>1</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>ff9fde01-9e4d-4829-8fba-bb05fae3f8e0</id>
+      <Name>Unisource Electric</Name>
+      <Value>2</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>e7dc6a3c-e8f6-486d-b27f-75f0e0a435e7</id>
+      <Name>Unisource Gas</Name>
+      <Value>3</Value>
+      <Description />
+    </AFEnumerationValue>
+    <SecurityAccessControl>World:A(r,rd)|Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|UNISOURCE\SOC_Restricted:A(r,rd,x,s,an)|Asset Analytics Recalculation:A(x)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics Writers:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)</SecurityAccessControl>
+  </AFEnumerationSet>
+  <AFEnumerationSet>
+    <id>bfdaad8c-a9d1-424e-b4f5-70bddf513a0f</id>
+    <Name>Phase(s)</Name>
+    <Description />
+    <AFEnumerationValue>
+      <id>2942bb50-c4fb-4823-b662-d1c447d614e2</id>
+      <Name>A</Name>
+      <Value>1</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>29542ca9-5650-4b81-9e70-92ec32ad3349</id>
+      <Name>AB</Name>
+      <Value>4</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>7eca9bfc-f269-48b3-9cf1-c49b5af51560</id>
+      <Name>ABC</Name>
+      <Value>7</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>76f10dbb-a869-4ec3-b837-e57c519ee9b0</id>
+      <Name>AC</Name>
+      <Value>5</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>681e0f92-c4ad-4862-ac87-2f63791604ee</id>
+      <Name>B</Name>
+      <Value>2</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>fead29a6-2c04-4af2-b205-bbdbf8c0298f</id>
+      <Name>BC</Name>
+      <Value>6</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>0ba13230-7d1e-4627-9673-90dc0198f00d</id>
+      <Name>C</Name>
+      <Value>3</Value>
+      <Description />
+    </AFEnumerationValue>
+    <SecurityAccessControl>World:A(r,rd)|Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|UNISOURCE\SOC_Restricted:A(r,rd,x,s,an)|Asset Analytics Recalculation:A(x)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics Writers:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)</SecurityAccessControl>
+  </AFEnumerationSet>
+  <AFEnumerationSet>
+    <id>09bcf115-f908-44fe-8c20-6217a637307e</id>
+    <Name>Voltage</Name>
+    <Description />
+    <AFEnumerationValue>
+      <id>18399846-a45e-4882-b6a7-91fbd513847d</id>
+      <Name>115kV</Name>
+      <Value>5</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>f57be37f-ba8f-4bfb-b59d-ec3423b74afb</id>
+      <Name>12kV</Name>
+      <Value>10</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>18ade31d-c314-4c08-9d1f-e0e3781df175</id>
+      <Name>13.8kV</Name>
+      <Value>8</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>afea72c4-29a0-4a27-961a-d4675b8c22f0</id>
+      <Name>131.8kV</Name>
+      <Value>12</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>67bbd4ce-bbcb-4539-aefe-0156a9cff958</id>
+      <Name>138kV</Name>
+      <Value>4</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>f4bbd717-1501-4f1f-b94e-5bdcdf1c1eb5</id>
+      <Name>230kV</Name>
+      <Value>3</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>aec80e3b-37a9-4701-9558-923071f09c61</id>
+      <Name>24.9kV</Name>
+      <Value>14</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>bbaaccf2-6857-4d09-b7c9-5b30f34749e1</id>
+      <Name>345kV</Name>
+      <Value>2</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>2465ac2c-e1c5-4a92-847c-59ff4bcbd2b0</id>
+      <Name>4.16kV</Name>
+      <Value>13</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>1e87b038-b103-4c2c-889e-cf6284c27b7e</id>
+      <Name>4.36kV</Name>
+      <Value>9</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>93718810-fe8e-42ba-b2f0-c181f26767cb</id>
+      <Name>43.8kV</Name>
+      <Value>11</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>6ac5a59a-93f1-42d3-bae1-4f0fa8e96d04</id>
+      <Name>46kV</Name>
+      <Value>7</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>5f42655d-24e7-4686-af94-df937390a3ab</id>
+      <Name>500kV</Name>
+      <Value>1</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>ec2432b4-f52c-408c-867b-f7585064e314</id>
+      <Name>69kV</Name>
+      <Value>6</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>5dbb407d-3899-4ace-a460-a954427f2699</id>
+      <Name>N/A</Name>
+      <Value>15</Value>
+      <Description />
+    </AFEnumerationValue>
+    <SecurityAccessControl>World:A(r,rd)|Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|UNISOURCE\SOC_Restricted:A(r,rd,x,s,an)|Asset Analytics Recalculation:A(x)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics Writers:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)</SecurityAccessControl>
+  </AFEnumerationSet>
+  <AFEnumerationSet>
+    <id>944a555e-a1f8-4337-af8b-5b31c9cf5638</id>
+    <Name>Breaker Type</Name>
+    <Description>Types of Breakers</Description>
+    <AFEnumerationValue>
+      <id>1cf53443-deaf-4bf0-8ae3-7c722b7c0a3c</id>
+      <Name>Circuit</Name>
+      <Value>0</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>3ee89ac0-f30d-488d-9d31-e9995c646891</id>
+      <Name>Main</Name>
+      <Value>1</Value>
+      <Description>Main bus breaker</Description>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>5c42e3e6-4154-4e1e-ac90-7c7da7fa6405</id>
+      <Name>Tie</Name>
+      <Value>2</Value>
+      <Description>Tie Breaker</Description>
+    </AFEnumerationValue>
+    <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|World:A(r,rd)|NT AUTHORITY\NETWORK SERVICE:A(r,w,rd,wd,x,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|Asset Analytics Recalculation:A(x)|PIAFandAnalyticsEditors:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)</SecurityAccessControl>
+  </AFEnumerationSet>
+  <AFElementTemplate>
+    <id>b918f0a5-ca12-410a-8fb7-1d90632978d0</id>
+    <Name>Circuit Breaker- UES</Name>
+    <Description />
+    <BaseTemplateOnly>false</BaseTemplateOnly>
+    <BaseTemplate />
+    <Type>None</Type>
+    <InstanceType>Element</InstanceType>
+    <AllowElementToExtend>true</AllowElementToExtend>
+    <DefaultAttribute />
+    <NamingPattern />
+    <DefaultInputPort />
+    <DefaultOutputPort />
+    <DefaultUndirectedPort />
+    <AFExtendedProperty>
+      <id>838fd79d-5fcc-4393-91a1-1f86c7286859</id>
+      <Name>Override</Name>
+      <Type>Object</Type>
+      <Value />
+    </AFExtendedProperty>
+    <AFAttributeTemplate>
+      <id>c2654e8c-29d8-43a0-a41b-95c13e104c5e</id>
+      <Name>Circuit Number</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>String Builder</DataReference>
+      <ConfigString>Replace("%Element%","BKR ","");</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>d652708e-af41-4934-aded-7f40ca010a65</id>
+      <Name>Circuit Prefix</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">BKR</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>2124d97b-93ea-4700-ad76-a3827c14a5ba</id>
+      <Name>Current</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>A</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\PIAFCALC:%..\Element% %Element%.%Attribute%;pointtype=Float64</ConfigString>
+      <AFAttributeCategoryRef id="e78654f9-cf5a-4686-8e25-39f7846cc0e8">Current</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>7171ac96-ff0a-483d-abd0-6451bbdeed76</id>
+      <Name>Current|Phase A</Name>
+      <Description>A PHASE AMPS</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>A</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+      <AFAttributeCategoryRef id="e78654f9-cf5a-4686-8e25-39f7846cc0e8">Current</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>4b8cf413-6a92-4833-a222-f20481b17846</id>
+      <Name>Current|Phase A|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND( [SCADA_NAME] LIKE '%A PHASE AMPS%' OR [SCADA_NAME] LIKE '%A-PHS AMPS%' OR [SCADA_NAME] LIKE '%A PHSE AMPS%' OR [SCADA_NAME] LIKE '%A-PHASE AMPS%' OR [SCADA_NAME] LIKE '%AMPS A%' OR [SCADA_NAME] LIKE '%AMPS PHSE A%' OR [SCADA_NAME] LIKE '%AMPS PH A%' OR [SCADA_NAME] LIKE '%PHS A AMPS') AND [EQUIP_NAME] LIKE '%%Element%%' ORDER BY SCADA_KEY</ConfigString>
+      <AFAttributeCategoryRef id="e78654f9-cf5a-4686-8e25-39f7846cc0e8">Current</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>5af7b788-e962-4d97-8ed9-7c8a3400ed7b</id>
+      <Name>Current|Phase B</Name>
+      <Description>B PHASE AMPS</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>A</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+      <AFAttributeCategoryRef id="e78654f9-cf5a-4686-8e25-39f7846cc0e8">Current</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>52b4164e-ef16-4ced-b2e8-b9144c60a742</id>
+      <Name>Current|Phase B|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND( [SCADA_NAME] LIKE '%B PHASE AMPS%' OR [SCADA_NAME] LIKE '%B-PHS AMPS%' OR [SCADA_NAME] LIKE '%B PHSE AMPS%' OR [SCADA_NAME] LIKE '%B-PHASE AMPS%' OR [SCADA_NAME] LIKE '%AMPS B%' OR [SCADA_NAME] LIKE '%AMPS PHSE B%' OR [SCADA_NAME] LIKE '%AMPS PH B%' OR [SCADA_NAME] LIKE '%PHS B AMPS') AND [EQUIP_NAME] LIKE '%%Element%%' ORDER BY SCADA_KEY</ConfigString>
+      <AFAttributeCategoryRef id="e78654f9-cf5a-4686-8e25-39f7846cc0e8">Current</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>98cea311-febe-4395-b4d5-67ae069e65b1</id>
+      <Name>Current|Phase C</Name>
+      <Description>C PHASE AMPS</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>A</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+      <AFAttributeCategoryRef id="e78654f9-cf5a-4686-8e25-39f7846cc0e8">Current</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>287996bb-6ce1-4f83-88a8-51b8c72def0c</id>
+      <Name>Current|Phase C|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND( [SCADA_NAME] LIKE '%C PHASE AMPS%' OR [SCADA_NAME] LIKE '%C-PHS AMPS%' OR [SCADA_NAME] LIKE '%C PHSE AMPS%' OR [SCADA_NAME] LIKE '%C-PHASE AMPS%' OR [SCADA_NAME] LIKE '%AMPS C%' OR [SCADA_NAME] LIKE '%AMPS PHSE C%' OR [SCADA_NAME] LIKE '%AMPS PH C%' OR [SCADA_NAME] LIKE '%PHS C AMPS') AND [EQUIP_NAME] LIKE '%%Element%%' ORDER BY SCADA_KEY</ConfigString>
+      <AFAttributeCategoryRef id="e78654f9-cf5a-4686-8e25-39f7846cc0e8">Current</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>9b1aed8a-175b-4355-a6f7-d56427256356</id>
+      <Name>Device State</Name>
+      <Description>Information pertinent to the devices state</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Int16</Type>
+      <TypeQualifier />
+      <Value type="Int16">0</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>3d097c66-9c9d-463d-9617-229a744ac474</id>
+      <Name>Device State|State</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+      <AFAttributeCategoryRef id="91c5ab78-1aae-4df9-a65a-bb4bee6ac614">Device State</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>fbbbb681-5a4e-4b62-a2b6-44d65ffc21d0</id>
+      <Name>Device State|State|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND [EQUIP_NAME] LIKE '%%Element%' and [OBJECT_TYPE]='STATUS' ORDER BY SCADA_KEY</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>03d27810-5f77-4cc2-bacc-743c4a245184</id>
+      <Name>Equipment Group</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>657ad8e3-048e-4dba-917e-2afba90eb838</id>
+      <Name>Geographic</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>a62a667e-a43b-480e-b5a0-b56c3e3d22ac</id>
+      <Name>Geographic|External Id</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>88084f7e-c8a4-49f7-a78e-d271b7ea082a</id>
+      <Name>Geographic|ID</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>3f466cf8-b5cd-4bf1-9233-67a577189ddf</id>
+      <Name>Geographic|Lattitude</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>98a5cd6f-ba9e-438f-bfc1-ab88b88806ad</id>
+      <Name>Geographic|Longitude</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>aa782d2a-99d8-4d2f-ab03-58a63782c853</id>
+      <Name>Ownership</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>AFEnumerationValue</Type>
+      <TypeQualifier type="AFObject">EnumerationSets[Company]</TypeQualifier>
+      <Value type="AFEnumerationValue">EnumerationSets[Company]\Unisource Electric</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>61b308aa-a2b3-401a-8f76-713505af9efe</id>
+      <Name>Phase(s)</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>AFEnumerationValue</Type>
+      <TypeQualifier type="AFObject">EnumerationSets[Phase(s)]</TypeQualifier>
+      <Value type="AFEnumerationValue">EnumerationSets[Phase(s)]\ABC</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>e47b1acc-7e57-4f33-8cd6-e220c941c8cb</id>
+      <Name>Rating</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>AFEnumerationValue</Type>
+      <TypeQualifier type="AFObject">EnumerationSets[Voltage]</TypeQualifier>
+      <Value />
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>3ee5f93c-0420-4a14-b48c-78d1a763d8ef</id>
+      <Name>Reactive Power</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>MVAR</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>2f095215-f7cc-4a90-a824-8263793c8b76</id>
+      <Name>Reactive Power|Aggregate</Name>
+      <Description>VARs (3 phase)</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>MVAR</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+      <AFAttributeCategoryRef id="dc3a4775-8455-4f2e-92d0-287d546a00ab">Reactive Power</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>8ce5e58f-d373-4903-9823-a9f954eb7053</id>
+      <Name>Reactive Power|Aggregate|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND [SCADA_NAME] LIKE '%MVAR' and [OBJECT_TYPE]='ANALOG' AND [EQUIP_NAME] LIKE '%%Element%%' ORDER BY SCADA_KEY</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>887b0d14-d8c4-435c-88e5-01182cbbf01e</id>
+      <Name>Real Power</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>kW</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%Server%\PIAFCALC:%..\Element% %Element%.%Attribute%;pointtype=Float64</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>36103595-c969-4a1f-821e-827c1fdf8d37</id>
+      <Name>Real Power|Aggregate</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>MW</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+      <AFAttributeCategoryRef id="0147a7f2-99b2-4ba9-a669-38c92daf0491">Power</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>31632a7e-5c6f-4138-b8ba-09eeb38bfcba</id>
+      <Name>Real Power|Aggregate|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND ([SCADA_NAME] LIKE '3 PH MW' OR ([SCADA_NAME] LIKE '%MW' AND [SCADA_NAME] NOT LIKE '%PHSE%' AND [SCADA_NAME] NOT LIKE '%PHASE%' AND [SCADA_NAME] NOT LIKE '%PHS%')) and [OBJECT_TYPE]='ANALOG' AND [EQUIP_NAME] = '%Element%' ORDER BY SCADA_KEY</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>a282d5d5-d24c-4b8e-9d01-bc2586519618</id>
+      <Name>Real Power|Phase A</Name>
+      <Description>A PHASE WATTS</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>kW</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>d8f5a51b-7a15-4e2e-91ae-0a4b66ff8591</id>
+      <Name>Real Power|Phase A|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND( [SCADA_NAME] LIKE '%A PHASE KW%' OR [SCADA_NAME] LIKE '%A-PHS KW%' OR [SCADA_NAME] LIKE '%A PHSE KW%' OR [SCADA_NAME] LIKE '%A-PHASE KW%' OR [SCADA_NAME] LIKE '%KW A%' OR [SCADA_NAME] LIKE '%KW PHSE A%' OR [SCADA_NAME] LIKE '%KW PH A%' OR [SCADA_NAME] LIKE '%WATTS PHASE A%') AND [EQUIP_NAME] LIKE '%%Element%%' ORDER BY SCADA_KEY</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>c49dd10c-37c4-4ee6-8530-c2de004eb978</id>
+      <Name>Real Power|Phase B</Name>
+      <Description>B PHASE WATTS</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>kW</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>65b2f8d2-6b5a-4895-8291-eab061fd512d</id>
+      <Name>Real Power|Phase B|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND( [SCADA_NAME] LIKE '%B PHASE KW%' OR [SCADA_NAME] LIKE '%B-PHS KW%' OR [SCADA_NAME] LIKE '%B PHSE KW%' OR [SCADA_NAME] LIKE '%B-PHASE KW%' OR [SCADA_NAME] LIKE '%KW B%' OR [SCADA_NAME] LIKE '%KW PHSE B%' OR [SCADA_NAME] LIKE '%KW PH B%' OR [SCADA_NAME] LIKE '%WATTS PHASE B%') AND [EQUIP_NAME] LIKE '%%Element%%' ORDER BY SCADA_KEY</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>48136bb1-2c6f-4386-a3f6-e4075b95ddad</id>
+      <Name>Real Power|Phase C</Name>
+      <Description>C PHASE WATTS</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>kW</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>52f90165-a5cf-4457-8170-359642db45d4</id>
+      <Name>Real Power|Phase C|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND( [SCADA_NAME] LIKE '%C PHASE KW%' OR [SCADA_NAME] LIKE '%C-PHS KW%' OR [SCADA_NAME] LIKE '%C PHSE KW%' OR [SCADA_NAME] LIKE '%C-PHASE KW%' OR [SCADA_NAME] LIKE '%KW C%' OR [SCADA_NAME] LIKE '%KW PHSE C%' OR [SCADA_NAME] LIKE '%KW PH C%' OR [SCADA_NAME] LIKE '%WATTS PHASE C%') AND [EQUIP_NAME] LIKE '%%Element%%' ORDER BY SCADA_KEY</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>e0d7a438-a428-4144-9a02-dfdde9d791c9</id>
+      <Name>Substation</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference>String Builder</DataReference>
+      <ConfigString>'%..\Element%';</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>0fbacf14-eb47-44e7-8b25-64b85cbd920a</id>
+      <Name>Transformer Number</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Int16</Type>
+      <TypeQualifier />
+      <Value type="Int16">0</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>adb6b30e-c1af-4cfe-9761-bb7546876b84</id>
+      <Name>Type</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>AFEnumerationValue</Type>
+      <TypeQualifier type="AFObject">EnumerationSets[Breaker Type]</TypeQualifier>
+      <Value type="AFEnumerationValue">EnumerationSets[Breaker Type]\Circuit</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>cb21e2f5-85bb-4463-9fa3-2651f2942ab8</id>
+      <Name>Voltage</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>kV</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%Server%\PIAFCALC:%..\Element% %Element%.%Attribute%;pointtype=Float64</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>2b303c99-8e16-4b77-8822-3f31093868e5</id>
+      <Name>Voltage|Aggregate</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>kV</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+      <AFAttributeCategoryRef id="0147a7f2-99b2-4ba9-a669-38c92daf0491">Power</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>8399421c-ecb3-40b1-99e5-41918b944cbd</id>
+      <Name>Voltage|Aggregate|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND ([SCADA_NAME] LIKE '3 PH KV' OR ([SCADA_NAME] LIKE '%KV' AND [SCADA_NAME] NOT LIKE '%PHSE%' AND [SCADA_NAME] NOT LIKE '%PHASE%' AND [SCADA_NAME] NOT LIKE '%PHS%')) and [OBJECT_TYPE]='ANALOG' AND [EQUIP_NAME] = '%Element%' ORDER BY SCADA_KEY</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>aa0a8f03-1e18-41ff-a956-9daf01e59823</id>
+      <Name>Voltage|Phase A</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>kV</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+      <AFAttributeCategoryRef id="8bd0b447-560e-44a5-b199-966d888b2f68">Voltage</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>41ac2cba-39b3-458a-8614-160fb2c2a89d</id>
+      <Name>Voltage|Phase A|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND( [SCADA_NAME] LIKE '%VOLTS PH A%' OR [SCADA_NAME] LIKE '%A PHSE VOLTS%' OR [SCADA_NAME] LIKE '%A PHASE VOLTAGE%' OR [SCADA_NAME] LIKE '% VOLTS PHASE A%' OR [SCADA_NAME] LIKE '%A PHASE KV%' OR [SCADA_NAME] LIKE '%A VOLTS%' OR [SCADA_NAME] LIKE '%A PHSE KV%' OR [SCADA_NAME] LIKE '%VOLTS PHS A')AND [EQUIP_NAME] LIKE '%%Element%%' ORDER BY SCADA_KEY</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>3ea1edef-8dff-4907-848a-65e6d1bcc16e</id>
+      <Name>Voltage|Phase B</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>kV</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+      <AFAttributeCategoryRef id="8bd0b447-560e-44a5-b199-966d888b2f68">Voltage</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>d1714358-d6c5-4e4c-b591-79577d25f953</id>
+      <Name>Voltage|Phase B|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND( [SCADA_NAME] LIKE '%VOLTS PH B%' OR [SCADA_NAME] LIKE '%B PHSE VOLTS%' OR [SCADA_NAME] LIKE '%B PHASE VOLTAGE%' OR [SCADA_NAME] LIKE '% VOLTS PHASE B%' OR [SCADA_NAME] LIKE '%B PHASE KV%' OR [SCADA_NAME] LIKE '%B VOLTS%' OR [SCADA_NAME] LIKE '%B PHSE KV%' OR [SCADA_NAME] LIKE '%VOLTS PHS B') AND [EQUIP_NAME] LIKE '%%Element%%' ORDER BY SCADA_KEY</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>e9ded327-4dde-48a4-977d-669d7378ae1f</id>
+      <Name>Voltage|Phase C</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>kV</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Double</Type>
+      <TypeQualifier />
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@\UNS|PISERVER%\%@.|DMS_SCADA_KEY%</ConfigString>
+      <AFAttributeCategoryRef id="8bd0b447-560e-44a5-b199-966d888b2f68">Voltage</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>10815247-62f9-463f-b4ea-c890ded76567</id>
+      <Name>Voltage|Phase C|DMS_SCADA_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = '%..\Element%' AND( [SCADA_NAME] LIKE '%VOLTS PH C%' OR [SCADA_NAME] LIKE '%C PHSE VOLTS%' OR [SCADA_NAME] LIKE '%C PHASE VOLTAGE%' OR [SCADA_NAME] LIKE '% VOLTS PHASE C%' OR [SCADA_NAME] LIKE '%C PHASE KV%' OR [SCADA_NAME] LIKE '%C VOLTS%' OR [SCADA_NAME] LIKE '%C PHSE KV%' OR [SCADA_NAME] LIKE '%VOLTS PHS C') AND [EQUIP_NAME] LIKE '%%Element%%' ORDER BY SCADA_KEY</ConfigString>
+    </AFAttributeTemplate>
+    <AFAnalysisTemplate>
+      <id>6d83c1b2-5634-4d53-b2fb-b991980d3708</id>
+      <Name>Current Rollup</Name>
+      <Description />
+      <OutputTime />
+      <GroupID>0</GroupID>
+      <CaseTemplate />
+      <Target>Circuit Breaker- UES</Target>
+      <CreateEnabled>true</CreateEnabled>
+      <AFAnalysisCategoryRef id="a3369775-e056-4dcb-8bfe-58e05c255d8c">CircuitKPI</AFAnalysisCategoryRef>
+      <AFTimeRule>
+        <AFPlugIn id="adc23b8f-0657-4799-8f09-c4e0937fc7cc">Periodic</AFPlugIn>
+        <ConfigString>Frequency=300</ConfigString>
+      </AFTimeRule>
+      <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|World:A(r,rd)|NT AUTHORITY\NETWORK SERVICE:A(r,w,rd,wd,x,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|Asset Analytics Recalculation:A(x)|PIAFandAnalyticsEditors:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)</SecurityAccessControl>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <id>3d824072-8b50-4f72-b643-ee262dbd916e</id>
+      <Name>MaxCurrentPhaseA</Name>
+      <Description />
+      <OutputTime />
+      <GroupID>0</GroupID>
+      <CaseTemplate />
+      <Target>Circuit Breaker- UES</Target>
+      <CreateEnabled>true</CreateEnabled>
+      <AFTimeRule>
+        <AFPlugIn id="adc23b8f-0657-4799-8f09-c4e0937fc7cc">Periodic</AFPlugIn>
+        <ConfigString>Frequency=300</ConfigString>
+      </AFTimeRule>
+      <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|World:A(r,rd)|NT AUTHORITY\NETWORK SERVICE:A(r,w,rd,wd,x,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|Asset Analytics Recalculation:A(x)|PIAFandAnalyticsEditors:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)</SecurityAccessControl>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <id>fdb424a3-8c0d-4e26-9d87-8abf2b7fcbd1</id>
+      <Name>Real Power Aggregate Current Year Max</Name>
+      <Description />
+      <OutputTime />
+      <GroupID>0</GroupID>
+      <CaseTemplate />
+      <Target>Circuit Breaker- UES</Target>
+      <CreateEnabled>true</CreateEnabled>
+      <AFTimeRule>
+        <AFPlugIn id="adc23b8f-0657-4799-8f09-c4e0937fc7cc">Periodic</AFPlugIn>
+        <ConfigString>Frequency=300</ConfigString>
+      </AFTimeRule>
+      <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|World:A(r,rd)|NT AUTHORITY\NETWORK SERVICE:A(r,w,rd,wd,x,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|Asset Analytics Recalculation:A(x)|PIAFandAnalyticsEditors:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)</SecurityAccessControl>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <id>face588c-19f8-49e8-a24d-ea062e254524</id>
+      <Name>Real Power Aggregate Prior Year</Name>
+      <Description />
+      <OutputTime />
+      <GroupID>0</GroupID>
+      <CaseTemplate />
+      <Target>Circuit Breaker- UES</Target>
+      <CreateEnabled>true</CreateEnabled>
+      <AFTimeRule>
+        <AFPlugIn id="adc23b8f-0657-4799-8f09-c4e0937fc7cc">Periodic</AFPlugIn>
+        <ConfigString>Day=Sun, Mon, Tue, Wed, Thu, Fri, Sat</ConfigString>
+      </AFTimeRule>
+      <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|World:A(r,rd)|NT AUTHORITY\NETWORK SERVICE:A(r,w,rd,wd,x,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|Asset Analytics Recalculation:A(x)|PIAFandAnalyticsEditors:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)</SecurityAccessControl>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <id>55efc7a5-43da-4bb3-b90e-3faed849049c</id>
+      <Name>Real Power Rollup</Name>
+      <Description />
+      <OutputTime />
+      <GroupID>0</GroupID>
+      <CaseTemplate />
+      <Target>Circuit Breaker- UES</Target>
+      <CreateEnabled>true</CreateEnabled>
+      <AFTimeRule>
+        <AFPlugIn id="adc23b8f-0657-4799-8f09-c4e0937fc7cc">Periodic</AFPlugIn>
+        <ConfigString>Frequency=300</ConfigString>
+      </AFTimeRule>
+      <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|World:A(r,rd)|NT AUTHORITY\NETWORK SERVICE:A(r,w,rd,wd,x,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|Asset Analytics Recalculation:A(x)|PIAFandAnalyticsEditors:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)</SecurityAccessControl>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <id>5c02385e-0179-42fb-a483-af2a70667f9b</id>
+      <Name>Stale Meter Data</Name>
+      <Description />
+      <OutputTime />
+      <GroupID>0</GroupID>
+      <CaseTemplate />
+      <Target>Circuit Breaker- UES</Target>
+      <CreateEnabled>true</CreateEnabled>
+      <AFTimeRule>
+        <AFPlugIn id="adc23b8f-0657-4799-8f09-c4e0937fc7cc">Periodic</AFPlugIn>
+        <ConfigString>Frequency=28800;Offset=1800</ConfigString>
+      </AFTimeRule>
+      <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|World:A(r,rd)|NT AUTHORITY\NETWORK SERVICE:A(r,w,rd,wd,x,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|Asset Analytics Recalculation:A(x)|PIAFandAnalyticsEditors:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)</SecurityAccessControl>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <id>a8045e3e-6347-4f41-ad0e-762b39caca49</id>
+      <Name>Voltage Rollup</Name>
+      <Description />
+      <OutputTime />
+      <GroupID>0</GroupID>
+      <CaseTemplate />
+      <Target>Circuit Breaker- UES</Target>
+      <CreateEnabled>true</CreateEnabled>
+      <AFTimeRule>
+        <AFPlugIn id="adc23b8f-0657-4799-8f09-c4e0937fc7cc">Periodic</AFPlugIn>
+        <ConfigString>Frequency=300</ConfigString>
+      </AFTimeRule>
+      <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|World:A(r,rd)|NT AUTHORITY\NETWORK SERVICE:A(r,w,rd,wd,x,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|Asset Analytics Recalculation:A(x)|PIAFandAnalyticsEditors:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)</SecurityAccessControl>
+    </AFAnalysisTemplate>
+    <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|World:A(r,rd)|NT AUTHORITY\NETWORK SERVICE:A(r,w,rd,wd,x,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|Asset Analytics Recalculation:A(x)|PIAFandAnalyticsEditors:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)</SecurityAccessControl>
+  </AFElementTemplate>
+</AF>

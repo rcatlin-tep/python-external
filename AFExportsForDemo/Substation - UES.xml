@@ -1,0 +1,1217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.10.11.2717" ExportMode="AllReferences, DefaultValues, Security, Flat, SimplifiedConfigStrings" PISystem="ESPWDPI01" Database="DEMO" Description="" Created="2024-03-25T15:06:30.982225Z" id="263042eb-2076-4941-9ff0-b37a52df5022" ParentKey="64ca14eb-457a-4abe-bf4b-a8422808f8bc" ExportedObject="Substation - UES" ExportedType="AFElementTemplate" Identity="ElementTemplate" PIPersist="190 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{c375c94f-49f2-45ac-8fcb-12ba9f83e9e3}\ElementTemplates[{263042eb-2076-4941-9ff0-b37a52df5022}]*ESPWDPI01\DEMO\ElementTemplates[Substation - UES]">
+  <AFSecurityIdentity>
+    <id>7eb0e507-fe9d-4c32-9ff0-8ff1ac7ad8ea</id>
+    <Name>World</Name>
+    <Description>World security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>04044e48-3f91-498e-956c-95cc73c3f886</id>
+    <Name>Administrators</Name>
+    <Description>Administrator security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>790bb16a-9a2c-4ec0-8a70-ce9a96dafc49</id>
+    <Name>Asset Analytics</Name>
+    <Description>PI Analysis Service security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>a0342142-4854-42a9-bff0-523ca50f27cd</id>
+    <Name>Notifications</Name>
+    <Description>PI Notifications Service security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>577ff210-4840-4f02-abeb-224960731c8a</id>
+    <Name>UNISOURCE\SOC_Restricted</Name>
+    <Description>Wholesale Marketing Empolyees</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>00fc2a26-44df-4a76-bdbd-7353604cae0d</id>
+    <Name>Asset Analytics Recalculation</Name>
+    <Description>PI Analysis Service recalculation/backfilling security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>b5f057c3-d7d6-4f53-9182-7adddc5be3c2</id>
+    <Name>UNISOURCE\SOC_Unrestricted</Name>
+    <Description />
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>48fd5454-d996-4b38-83b4-7734455b36fb</id>
+    <Name>Asset Analytics Writers</Name>
+    <Description>Asset AF Analytics Write Priv</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>72c1ab8f-9ff0-4c60-a1ca-6ab5f038dae4</id>
+    <Name>RTQP Engine</Name>
+    <Description>RTQP Engine security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>20bdec96-44e8-4730-9714-70f528779fa0</id>
+    <Name>Engineers</Name>
+    <Description>Engineer security access</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFSecurityIdentity>
+    <id>583a2e01-9399-4945-afe0-dfd7f7f81165</id>
+    <Name>Corporate User Testing-Training</Name>
+    <Description>Identity to allow corporate users to do testing and training</Description>
+    <IsEnabled>true</IsEnabled>
+  </AFSecurityIdentity>
+  <AFEnumerationSet>
+    <id>7e7e6d52-9a32-4050-b637-b05d0c3137b6</id>
+    <Name>AOR</Name>
+    <Description />
+    <AFEnumerationValue>
+      <id>2e25b695-8c27-434e-bc71-6e2fb7a4553d</id>
+      <Name>Communication</Name>
+      <Value>4</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>f5ad0a24-3af6-415a-bd50-5d160f396445</id>
+      <Name>Distribution</Name>
+      <Value>1</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>9dec0cb1-a371-4f60-a6a8-01eacf8d178d</id>
+      <Name>EMS</Name>
+      <Value>7</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>e130ecdc-bc1f-4fcb-8e85-477c3113b72f</id>
+      <Name>Engineering</Name>
+      <Value>6</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>b7dd346a-e1f8-49a4-9e57-8f6bc4f5ac93</id>
+      <Name>Generation</Name>
+      <Value>3</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>b1c9b1c8-1c01-4afb-ba65-0e55f28eecac</id>
+      <Name>KGM</Name>
+      <Value>5</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>5503e194-e2dc-47a4-a9c7-2bc294eaff34</id>
+      <Name>Transmission</Name>
+      <Value>2</Value>
+      <Description />
+    </AFEnumerationValue>
+    <SecurityAccessControl>World:A(r,rd)|Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|UNISOURCE\SOC_Restricted:A(r,rd,x,s,an)|Asset Analytics Recalculation:A(x)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics Writers:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)</SecurityAccessControl>
+  </AFEnumerationSet>
+  <AFEnumerationSet>
+    <id>827f52d5-158b-4cbe-8d92-528f7fab28ee</id>
+    <Name>City</Name>
+    <Description />
+    <AFEnumerationValue>
+      <id>36071c33-e2d8-4918-be58-3d99697758b3</id>
+      <Name>Ajo</Name>
+      <Value>4</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>996b8ba5-d3e1-4383-9629-5a74c399edd4</id>
+      <Name>Amado</Name>
+      <Value>5</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>5579ba19-25af-410f-bf22-fd916844e579</id>
+      <Name>Ash Fork</Name>
+      <Value>6</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>2a395cb6-385f-49cc-91ff-0f3bbef64629</id>
+      <Name>Avra Valley</Name>
+      <Value>7</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>210ace57-6ae5-498e-9f89-3ae2e07fd00c</id>
+      <Name>Bagdad</Name>
+      <Value>8</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>dabd8235-078b-4373-82aa-0923178d4489</id>
+      <Name>Bellemont</Name>
+      <Value>9</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>d1a00cb8-7bde-484b-b9b1-d40a93be5527</id>
+      <Name>Black Canyon City</Name>
+      <Value>10</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>6f1ca379-4044-41a1-8df2-89c2423b5a75</id>
+      <Name>Bullhead City</Name>
+      <Value>11</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>0c786187-60f3-45ab-9213-96ab35894e4b</id>
+      <Name>Camp Verde</Name>
+      <Value>12</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>cf8d054c-dba2-42d9-bb10-2944059f329b</id>
+      <Name>Carmen</Name>
+      <Value>13</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>2006278c-89b9-4358-8710-0c9018ad2545</id>
+      <Name>Catalina</Name>
+      <Value>14</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>9b531c8b-2627-497d-b839-e53948829240</id>
+      <Name>Chino Valley</Name>
+      <Value>15</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>3a9ce2bf-0073-4f20-b20e-bfcb7b15f766</id>
+      <Name>Chloride</Name>
+      <Value>16</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>900b5e7d-d286-4549-a503-feff444266d7</id>
+      <Name>Church Rock</Name>
+      <Value>17</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>7b4bf9c7-a593-41d7-9b76-c489effe4427</id>
+      <Name>Clarkdale</Name>
+      <Value>18</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>48fbbd43-a3a7-4729-94e3-daf5431dd92c</id>
+      <Name>Clifton</Name>
+      <Value>19</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>4ca0048e-e6e4-46eb-951d-22c29653fe60</id>
+      <Name>Cornville</Name>
+      <Value>20</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>7185a0ba-691a-4431-8dae-d7d5dfc0163e</id>
+      <Name>Coronado</Name>
+      <Value>21</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>fbfc27f5-4f4a-44b5-88af-32b6758a6a60</id>
+      <Name>Cortaro</Name>
+      <Value>22</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>14116b21-72be-4b96-978e-3ee0bd26aa20</id>
+      <Name>Cottonwood</Name>
+      <Value>23</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>1f2cba70-8fa5-468e-aefc-ba925d1d9ec2</id>
+      <Name>Deming</Name>
+      <Value>99</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>6224ecec-eb21-4690-bb09-91b9540591b5</id>
+      <Name>Dewey</Name>
+      <Value>24</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>9a8503b1-b388-4d7b-8b9e-d3586d96d815</id>
+      <Name>Dolan Springs</Name>
+      <Value>25</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>014caf7c-656e-4606-87d1-d19069a7da6a</id>
+      <Name>Farmington</Name>
+      <Value>26</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>77ae466d-b943-4346-84d1-f734cfbb5a9d</id>
+      <Name>Flagstaff</Name>
+      <Value>27</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>c365fb0e-0aa7-4923-965a-e6f19223f169</id>
+      <Name>Fort Huachuca</Name>
+      <Value>28</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>13f4b12e-703d-4585-83b3-c42be6cf2980</id>
+      <Name>Fort Mohave</Name>
+      <Value>29</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>af01c153-29b4-468e-aadd-e1445e4c1f03</id>
+      <Name>Fort Rock</Name>
+      <Value>30</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>f4533693-5fdf-422f-904b-d48b0e0efe31</id>
+      <Name>Four Corners</Name>
+      <Value>31</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>9d77aed1-f6b2-417d-90c5-8f292922e765</id>
+      <Name>Gallup</Name>
+      <Value>32</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>fae3bf6d-de3f-4c4f-bef7-b621dad33f4d</id>
+      <Name>Golden Horseshoes</Name>
+      <Value>33</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>48d18bf3-4897-445d-b99b-992896c505cb</id>
+      <Name>Golden Valley</Name>
+      <Value>34</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>7ffa46aa-bfdc-4054-89f0-515fae4b598d</id>
+      <Name>Gray Mountain</Name>
+      <Value>35</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>7e776e48-c961-4775-85f1-adcdcaf26c90</id>
+      <Name>Green Valley</Name>
+      <Value>36</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>7e324396-3351-4e4d-944c-8ee80f84a997</id>
+      <Name>Holbrook</Name>
+      <Value>37</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>f460e242-ed03-42df-8f11-8a06a66df04c</id>
+      <Name>Humboldt</Name>
+      <Value>38</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>e32eb455-077e-4053-959c-521f7d9911cf</id>
+      <Name>Indian Wells</Name>
+      <Value>39</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>595f0948-25d1-43e7-bcd9-a47d32889e8c</id>
+      <Name>Jerome</Name>
+      <Value>40</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>418f9d5f-3c9d-4766-b9bd-5902220b9269</id>
+      <Name>Joseph City</Name>
+      <Value>41</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>f6e7e559-35d7-439c-9563-57f5270affd9</id>
+      <Name>Kayenta</Name>
+      <Value>42</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>39c11b7a-c953-4e97-8474-92ec93def8d8</id>
+      <Name>Kingman</Name>
+      <Value>2</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>13c2b93a-e3d7-4404-9d40-0ade3d92c81b</id>
+      <Name>Lake Havasu City</Name>
+      <Value>43</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>eb44df4e-0320-4569-881a-13550632b406</id>
+      <Name>Lakeside</Name>
+      <Value>44</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>d89f5506-7855-41b2-9ca7-b51074d11f29</id>
+      <Name>Leche</Name>
+      <Value>45</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>04601818-859f-412d-b87a-1116b5d26206</id>
+      <Name>Leupp</Name>
+      <Value>46</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>25c61389-2551-4159-acfa-7c1b4473c520</id>
+      <Name>Lochiel</Name>
+      <Value>47</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>4fcbdf2d-2c78-4370-b14a-9327877b6b4c</id>
+      <Name>Marana</Name>
+      <Value>48</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>58e2834e-65b1-47c7-b66a-e74c3212a3f9</id>
+      <Name>Maricopa</Name>
+      <Value>49</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>32edbc71-bcf0-4f8b-acff-417f6145be8c</id>
+      <Name>Mayer</Name>
+      <Value>50</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>f7884ee9-6eaa-42ed-b788-a3ca24952726</id>
+      <Name>Meadview</Name>
+      <Value>51</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>d0d38b4b-faea-4393-b13d-8cbbddaf2a7a</id>
+      <Name>Mohave Valley</Name>
+      <Value>52</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>f4b02727-f00c-445e-a5c5-577c7af3e506</id>
+      <Name>Morenci</Name>
+      <Value>53</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>ee004962-ad95-423f-92a8-90e014d6dfeb</id>
+      <Name>Nogales</Name>
+      <Value>54</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>3ee27e02-cef6-4215-b01a-fb7ce7fb8613</id>
+      <Name>Oatman</Name>
+      <Value>55</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>df405f04-6d8c-47d8-9af3-a1c3824e1a06</id>
+      <Name>Oro Valley</Name>
+      <Value>56</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>7f6274ba-fcdf-4657-9478-15d9932586e4</id>
+      <Name>Page</Name>
+      <Value>57</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>cf0946c7-af62-4652-b91c-47cb8cade1a0</id>
+      <Name>Parks</Name>
+      <Value>58</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>c6e369b0-2ea4-49f2-a81f-66f940391971</id>
+      <Name>Patagonia</Name>
+      <Value>59</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>bd142e74-88ca-421e-b0c2-fdf85c02bb44</id>
+      <Name>Paulden</Name>
+      <Value>60</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>9cd409a4-2e2c-4745-847f-5670951852e8</id>
+      <Name>Peach Springs</Name>
+      <Value>61</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>21adfbd9-9355-444b-be22-8115fa53fc0c</id>
+      <Name>Pinetop</Name>
+      <Value>62</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>642a5a00-aa08-4945-b2be-aacb404e938a</id>
+      <Name>Pirtleville</Name>
+      <Value>63</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>f8f16b31-d413-4156-b8ca-4eb52d7d6598</id>
+      <Name>Pomerene</Name>
+      <Value>64</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>8a0ce6d4-e19f-4cdd-96be-f1d9880009e2</id>
+      <Name>Prescott</Name>
+      <Value>65</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>146d3751-72eb-4504-b7e5-29c49b5773a8</id>
+      <Name>Prescott Valley</Name>
+      <Value>66</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>bdc36874-d5e3-489d-a3e7-a1a279396c96</id>
+      <Name>Redrock</Name>
+      <Value>67</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>43892dff-a6b4-44a6-be03-0c18b8d30c9c</id>
+      <Name>Rillito</Name>
+      <Value>68</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>73d35a4e-86e0-428c-aac7-10360a1c9d94</id>
+      <Name>Rio Rico</Name>
+      <Value>69</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>b47ef6bc-b713-446b-8160-0235e3cecf33</id>
+      <Name>Sahuarita</Name>
+      <Value>70</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>44dd9224-eb3d-4acf-a5a5-3a673adeebeb</id>
+      <Name>San Manuel</Name>
+      <Value>71</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>e57a9a2c-dbd3-4a37-bf01-5be8dbea1868</id>
+      <Name>Santa Claus</Name>
+      <Value>72</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>370adf95-fe21-491c-b7da-5d874c3e660d</id>
+      <Name>Sedona</Name>
+      <Value>73</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>aaa5ff59-fad4-4bdc-86cf-94e1672ae0b7</id>
+      <Name>Seligman</Name>
+      <Value>74</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>981024ee-2046-442d-a9ec-cd22b7825330</id>
+      <Name>Show Low</Name>
+      <Value>75</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>9ac46503-1ef3-4c4e-94b8-8c13575f733f</id>
+      <Name>Snowflake</Name>
+      <Value>76</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>e112dce5-f693-4a71-8c3b-0ec4e689098b</id>
+      <Name>So Hi</Name>
+      <Value>77</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>187a8798-a6c0-4e0a-8605-c90ef6029d63</id>
+      <Name>Sonoita</Name>
+      <Value>78</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>57901f1f-c3cc-427f-b42a-ed6fcd28df64</id>
+      <Name>Spring Valley</Name>
+      <Value>79</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>ce3a2fb9-b118-48d1-870d-a05f1f42a3b3</id>
+      <Name>Springerville</Name>
+      <Value>80</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>90fe90d0-6855-41ca-bcaf-ec52f600951c</id>
+      <Name>Sun City</Name>
+      <Value>81</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>e699b753-ec9d-4ed2-bc47-4bad815584c2</id>
+      <Name>Taylor</Name>
+      <Value>82</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>24571e5c-03df-49af-a182-6dff53cd9177</id>
+      <Name>Temple Bar</Name>
+      <Value>83</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>0599a2c2-5f93-43fd-b9ff-df4f30da6ced</id>
+      <Name>Temple Bar Marina</Name>
+      <Value>84</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>849c436a-9240-4e39-915d-ddd6abf943aa</id>
+      <Name>Topock</Name>
+      <Value>85</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>dcd5892d-83ce-4828-afb8-2138fcde3cdf</id>
+      <Name>Triangle Airpark</Name>
+      <Value>86</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>d0c765b3-49af-4861-bb55-6749082dd51a</id>
+      <Name>Tuba City</Name>
+      <Value>87</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>07f78379-9ab3-40ed-987a-856b3ae162ec</id>
+      <Name>Tubac</Name>
+      <Value>88</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>9f12553c-5ec2-407c-84f3-549ac9ad9b67</id>
+      <Name>Tucson</Name>
+      <Value>1</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>3ebdff62-1a54-4130-aea3-36d8ce86c51d</id>
+      <Name>Tumacacori</Name>
+      <Value>89</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>127880d3-e350-4693-9602-06138351855d</id>
+      <Name>Vail</Name>
+      <Value>90</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>74b32976-fa4d-4c65-8a24-28fe62fc1b3e</id>
+      <Name>Wagon Wheel</Name>
+      <Value>91</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>2c84b07e-566b-43e8-9aaf-3ed1c993f37d</id>
+      <Name>Washington Camp</Name>
+      <Value>92</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>3418690b-df85-46ad-86d8-cd261bfc1008</id>
+      <Name>Waterflow</Name>
+      <Value>93</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>773eb265-947f-473a-9ae4-f2e5ba51bf9d</id>
+      <Name>White Hills</Name>
+      <Value>94</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>3b04464b-6633-405e-ad7d-2b3bd6bdb282</id>
+      <Name>Williams</Name>
+      <Value>95</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>223539cd-2877-4672-8c34-ca3611460ea4</id>
+      <Name>Willow Beach</Name>
+      <Value>96</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>47cb821b-2e1e-4e7c-b16c-701fca788aaf</id>
+      <Name>Winslow</Name>
+      <Value>97</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>678fa48f-79a9-4c34-9119-2b1bd7f0584b</id>
+      <Name>Yucca</Name>
+      <Value>98</Value>
+      <Description />
+    </AFEnumerationValue>
+    <SecurityAccessControl>World:A(r,rd)|Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|UNISOURCE\SOC_Restricted:A(r,rd,x,s,an)|Asset Analytics Recalculation:A(x)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics Writers:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)</SecurityAccessControl>
+  </AFEnumerationSet>
+  <AFEnumerationSet>
+    <id>2c828182-3467-4591-9cf8-136e7688bf8c</id>
+    <Name>Company</Name>
+    <Description />
+    <AFEnumerationValue>
+      <id>fed6f8cb-46d4-46ba-a357-96e143dd3e4a</id>
+      <Name>APC</Name>
+      <Value>5</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>7673944f-8399-41c9-aed2-dd266ba2a760</id>
+      <Name>APS</Name>
+      <Value>6</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>0f6cc13a-cc96-40f3-87d6-62cbfe1bf9d3</id>
+      <Name>EPE</Name>
+      <Value>7</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>84b560ce-9bdc-472d-b528-560f0b8265b5</id>
+      <Name>PNM</Name>
+      <Value>4</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>efeb3621-0daa-4536-ad2c-0fa26ea661c0</id>
+      <Name>SRP</Name>
+      <Value>8</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>60c8ca65-6bc8-4f8f-8461-351d863e96a1</id>
+      <Name>Tucson Electric Power</Name>
+      <Value>1</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>ff9fde01-9e4d-4829-8fba-bb05fae3f8e0</id>
+      <Name>Unisource Electric</Name>
+      <Value>2</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>e7dc6a3c-e8f6-486d-b27f-75f0e0a435e7</id>
+      <Name>Unisource Gas</Name>
+      <Value>3</Value>
+      <Description />
+    </AFEnumerationValue>
+    <SecurityAccessControl>World:A(r,rd)|Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|UNISOURCE\SOC_Restricted:A(r,rd,x,s,an)|Asset Analytics Recalculation:A(x)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics Writers:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)</SecurityAccessControl>
+  </AFEnumerationSet>
+  <AFEnumerationSet>
+    <id>4ee1c77f-dacb-4474-941e-4f917da26ca5</id>
+    <Name>Ownership</Name>
+    <Description />
+    <AFEnumerationValue>
+      <id>781b28e6-849b-457f-86a5-380791157305</id>
+      <Name>AZPS</Name>
+      <Value>1</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>3f9c74b4-ded2-4260-89fe-547d690e2386</id>
+      <Name>AZPS/EPE/PNM/SCE/SRP</Name>
+      <Value>6</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>1b7fe777-be38-4525-8d4b-708497b528a6</id>
+      <Name>AZPS/EPE/TEP/PNM/SCE/WAPA</Name>
+      <Value>4</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>a9ebcf0a-0769-4c66-a40b-5445a59b4083</id>
+      <Name>PNM/TEP/MSR/SCPA</Name>
+      <Value>3</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>2b3433b4-3a63-4d4d-903b-1a4de5a41ebb</id>
+      <Name>PNM/TEP/PDES</Name>
+      <Value>2</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>9c7d8129-5e15-426e-be09-0d14fefc35a7</id>
+      <Name>SRP/AZPS/TEP/NEVP/LDWP/WAPA</Name>
+      <Value>5</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>3ac3d0cb-278a-497b-9ed5-e84e5619da21</id>
+      <Name>TEP</Name>
+      <Value>0</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>b8453d78-b46a-47ef-ad87-8c9bb8784c5b</id>
+      <Name>UNSE</Name>
+      <Value>7</Value>
+      <Description />
+    </AFEnumerationValue>
+    <SecurityAccessControl>World:A(r,rd)|Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|UNISOURCE\SOC_Restricted:A(r,rd,x,s,an)|Asset Analytics Recalculation:A(x)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics Writers:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)</SecurityAccessControl>
+  </AFEnumerationSet>
+  <AFEnumerationSet>
+    <id>3fac86cb-8190-471f-81ef-d17994084ea5</id>
+    <Name>Fuel Type</Name>
+    <Description />
+    <AFEnumerationValue>
+      <id>1d9d3372-7897-492f-864f-563d2cbe10b7</id>
+      <Name>COAL</Name>
+      <Value>0</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>a4063090-040e-45d0-9046-f5f47cbfc36a</id>
+      <Name>COAL/GAS</Name>
+      <Value>2</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>48a7385f-b36e-4150-9053-6ca133d285e0</id>
+      <Name>GAS</Name>
+      <Value>3</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>3cbc3812-9c87-445a-9252-dd1f54ab035f</id>
+      <Name>GAS/OIL</Name>
+      <Value>1</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>82b2529d-c625-46fc-9c80-6d1cced5d354</id>
+      <Name>HYDRO</Name>
+      <Value>7</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>c8bfa28f-1b46-4e99-9f7b-65166a30ef82</id>
+      <Name>NUCLEAR</Name>
+      <Value>4</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>7dd7cc90-8e69-43af-a974-5ed80c816c18</id>
+      <Name>SOLAR</Name>
+      <Value>5</Value>
+      <Description />
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <id>e6cf7c57-052b-48d9-af83-eb06e8d6fd76</id>
+      <Name>WIND</Name>
+      <Value>6</Value>
+      <Description />
+    </AFEnumerationValue>
+    <SecurityAccessControl>World:A(r,rd)|Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics:A(r,w,rd,wd,x,an)|Notifications:A(r,w,rd,wd,an)|UNISOURCE\SOC_Restricted:A(r,rd,x,s,an)|Asset Analytics Recalculation:A(x)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)|Asset Analytics Writers:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)</SecurityAccessControl>
+  </AFEnumerationSet>
+  <AFElementTemplate>
+    <id>263042eb-2076-4941-9ff0-b37a52df5022</id>
+    <Name>Substation - UES</Name>
+    <Description />
+    <BaseTemplateOnly>false</BaseTemplateOnly>
+    <BaseTemplate />
+    <Type>None</Type>
+    <InstanceType>Element</InstanceType>
+    <AllowElementToExtend>true</AllowElementToExtend>
+    <DefaultAttribute />
+    <NamingPattern />
+    <DefaultInputPort />
+    <DefaultOutputPort />
+    <DefaultUndirectedPort />
+    <AFAttributeTemplate>
+      <id>282f1be6-b2ef-4e57-8447-bac8bce18c33</id>
+      <Name>Address</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>3cd7909f-372b-494e-a83e-007b6994bfe3</id>
+      <Name>AOR1</Name>
+      <Description>Primary AOR</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>AFEnumerationValue</Type>
+      <TypeQualifier type="AFObject">EnumerationSets[AOR]</TypeQualifier>
+      <Value type="AFEnumerationValue">EnumerationSets[AOR]\KGM</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>ab146f1e-351e-4792-be0a-20772eef4d6c</id>
+      <Name>AOR1|AOR_ID</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Int16</Type>
+      <TypeQualifier />
+      <Value type="Int16">0</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>7742b730-c435-4a41-b903-2e27ed722065</id>
+      <Name>AOR2</Name>
+      <Description>Secondary AOR</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>AFEnumerationValue</Type>
+      <TypeQualifier type="AFObject">EnumerationSets[AOR]</TypeQualifier>
+      <Value />
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>0384ba0a-ae40-4d86-8319-911d82af7508</id>
+      <Name>AOR3</Name>
+      <Description>Tertiary AOR</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>AFEnumerationValue</Type>
+      <TypeQualifier type="AFObject">EnumerationSets[AOR]</TypeQualifier>
+      <Value />
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>f0f2e513-2cc4-4e35-81da-d8d22de8ea21</id>
+      <Name>City</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>AFEnumerationValue</Type>
+      <TypeQualifier type="AFObject">EnumerationSets[City]</TypeQualifier>
+      <Value />
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>38439dae-8420-43c3-b829-28ba3f245544</id>
+      <Name>Company</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>AFEnumerationValue</Type>
+      <TypeQualifier type="AFObject">EnumerationSets[Company]</TypeQualifier>
+      <Value type="AFEnumerationValue">EnumerationSets[Company]\Unisource Electric</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>9dc8b1b6-33f4-4757-8f24-45d09d730467</id>
+      <Name>GIS_NAME</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>110382e9-36b8-4e7b-90b2-fab5acc5cbd9</id>
+      <Name>GIS_NAME|GIS_ID</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Int16</Type>
+      <TypeQualifier />
+      <Value type="Int16">0</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>91b5e991-c9d9-4cd1-9064-15c7e3f34318</id>
+      <Name>GPS Location</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>6bbd3b75-13ce-4479-8b5e-5cb1a176c5df</id>
+      <Name>Ownership</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>AFEnumerationValue</Type>
+      <TypeQualifier type="AFObject">EnumerationSets[Ownership]</TypeQualifier>
+      <Value />
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>31b8b4e1-a129-49cd-8fa1-1a8753bd6c76</id>
+      <Name>Phone Number</Name>
+      <Description>Phone number at block house</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String">xxx-xxx-xxxx</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>1b16f9f3-8bea-41db-99e2-13feb1d68584</id>
+      <Name>Source Fuel</Name>
+      <Description>Primary fuel type used by generation source</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>AFEnumerationValue</Type>
+      <TypeQualifier type="AFObject">EnumerationSets[Fuel Type]</TypeQualifier>
+      <Value />
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>1a9adb99-2914-4c57-99cd-885ff2f4fad9</id>
+      <Name>Station Name</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference>String Builder</DataReference>
+      <ConfigString>"%Element%";</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>ceab5b1e-0c76-44f2-a461-582df2106475</id>
+      <Name>Station Name|Station Id</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Int16</Type>
+      <TypeQualifier />
+      <Value type="Int16">0</Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [STATION_ID] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = @[|Station Name]</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>864c4663-6104-4d52-9dbc-8ed949f4febd</id>
+      <Name>Station Temperature</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>°C</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Single</Type>
+      <TypeQualifier />
+      <Value type="Single">-50</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%Server%\%@.|STATION_TEMP_KEY%</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>c46703ff-1b58-495b-89ae-5adf937f8bfb</id>
+      <Name>Station Temperature|STATION_TEMP_KEY</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>String</Type>
+      <TypeQualifier />
+      <Value type="String"></Value>
+      <DataReference>Table Lookup</DataReference>
+      <ConfigString>SELECT [EXPECTED_TAG_NAME] FROM [ADMS_POINT_DESC_TO_TAG_REF] WHERE [STATION_NAME] = @[|Station Name] AND [SCADA_NAME] LIKE '%AMBIENT TEMP%'</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>ac0d68fa-b2af-4ad0-b8dc-246ccffec48d</id>
+      <Name>Utility Scale Renewable Energy Source</Name>
+      <Description>Substation is a source of utility-scale renewable energy (wind, solar, etc.)</Description>
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM />
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Boolean</Type>
+      <TypeQualifier />
+      <Value type="Boolean">False</Value>
+      <DataReference />
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <id>4cff1974-2ff5-4508-a39f-bac6cff2d0d2</id>
+      <Name>Wind Speed</Name>
+      <Description />
+      <IsHidden>false</IsHidden>
+      <IsManualDataEntry>false</IsManualDataEntry>
+      <IsConfigurationItem>false</IsConfigurationItem>
+      <IsExcluded>false</IsExcluded>
+      <IsIndexed>false</IsIndexed>
+      <Trait />
+      <DefaultUOM>mi/h</DefaultUOM>
+      <DisplayDigits>-5</DisplayDigits>
+      <Type>Int64</Type>
+      <TypeQualifier />
+      <Value type="Int64">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%Server%\%Element%.%Attribute%</ConfigString>
+    </AFAttributeTemplate>
+    <SecurityAccessControl>Administrators:A(r,w,rd,wd,d,x,a,s,so,an)|Engineers:A(r,w,rd,wd,d,x,s,so,an)|World:A(r,rd)|Asset Analytics:A(r,w,rd,wd,d,x,an)|Notifications:A(r,w,rd,wd,an)|Asset Analytics Recalculation:A(x)|Corporate User Testing-Training:A(r,w,rd,wd,d,x,s,so,an)|RTQP Engine:A(r,rd)|UNISOURCE\SOC_Unrestricted:A(r,w,rd,wd,d,x,a,s,so,an)</SecurityAccessControl>
+  </AFElementTemplate>
+</AF>
