@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.10.9.593" ExportMode="NoUniqueID" PISystem="ESPWPPIAF01" Database="UES" Description="UES" Created="2024-03-25T19:09:32.0531388Z" id="8bd0b447-560e-44a5-b199-966d888b2f68" ParentKey="cc56993d-ba9e-4b66-b2e0-d03ac1f3c6cb" ExportedObject="Voltage" ExportedType="AFCategory" Identity="CategoryAttribute" PIPersist="188 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{8dae210f-95c7-4773-b75a-a388aac20be0}\CategoriesAttribute[{8bd0b447-560e-44a5-b199-966d888b2f68}]*ESPWPPIAF01\UES\CategoriesAttribute[Voltage]">
+  <AFAttributeCategory>
+    <Name>Voltage</Name>
+  </AFAttributeCategory>
+</AF>

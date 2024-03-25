@@ -18,7 +18,7 @@ from pathlib import Path
 from datetime import datetime
 
 class AfReferenceBuilder:
-    CORP_EMS_MAP_TABLE = 'ITESDW.dbo.CORP_POINT_TAG_REF_TEMP'
+    CORP_EMS_MAP_TABLE = 'ITESDW.dbo.CORP_POINT_TAG_REF'
     af_sql_table = 'ITESDW.dbo.ADMS_POINT_DESC_TO_TAG_REF'
     objectypes = ['ANALOG','STATUS','ACCUMULATOR']
     basequerytemplate = '''SELECT s.pStation STATION_ID,
@@ -106,7 +106,7 @@ s.pEQUIP = se.recnum'''
    
     def GetAFData(self):
         if self._afdataconn is None:
-            if self.osissystem.lower() =='dms':
+            if self.osissystem.lower() =='dms' or self.osissystem.lower() =='corp':
                 print('using dms')
                 self._afdataconn = tepcoredata(self.dbinfo.GetUsername('ITESDWCORP'),self.dbinfo.GetPwd('ITESDWCORP'),self.dbinfo.GetDSNInKeePass('ITESDWCORP'),True,False,'PIAFSQL')  
             else:
@@ -354,6 +354,12 @@ OSI_SYSTEM	varchar(20)
             print(str(e))
         return True     
     
+    def DoCorpRefTableLoad(self):
+        outcorpdf = self.FetchCorpPiData()
+        self.OutPutCorpToSqlTable(outcorpdf)
+        self.AddScadaDataForCorpPiData()
+        return True
+    
     def DoInterface(self,startdt=None):
         outdf = self.FetchAllScadaData()
         self.OutPutDataToCSV(outdf)
@@ -368,3 +374,57 @@ OSI_SYSTEM	varchar(20)
         self.HandleInterfaceWarnings()
 
         return True
+if __name__ == '__main__':
+    import argparse
+    import os
+    print("Interface is running")
+    
+    parser = argparse.ArgumentParser(description='Run a TEP interface python script')
+    parser.add_argument("-p","--path", help="The path for the CONFIG file")
+    parser.add_argument("-u","--user", help="The desired database user")
+    parser.add_argument("-x","--pwd", help="The desired database pwd")
+    parser.add_argument("-d","--db", help="The desired database")
+    parser.add_argument("-i","--interface", help="The desired interface (upcproductiontofile/upcproductiontopi/upcpointsfromcsv")
+    parser.add_argument("-n","--domain", help="The desired domain")
+    parser.add_argument("-l","--log", help="The desired log level t/f default f")
+    parser.add_argument("-f","--autofail", help="The jenkins interface failover t/f default f")
+    parser.add_argument("-a","--osisystem", help="The dms system name corp/ems/dms name")
+    parser.add_argument("-c","--checkosionline", help="The OSI Domain is online on this server")
+    args = parser.parse_args()
+    
+    
+    
+    
+    if args.path:
+        CONFIG=args.path
+    else:
+        CONFIG = 'C:/Users/AA58436/Documents/GitHub/python-external/python/config/AFCreateFromSCADATEP.json'
+        
+    if args.user:
+        userin=args.user
+    
+    if args.pwd:
+        pwdin=args.pwd
+    if args.db:
+        dbname=args.db
+    
+    if args.domain:
+        domain=args.domain
+    else:
+        domain = 'test'
+        
+    if args.log:
+        if args.log =='t':
+            debugind=True
+        else:
+            debugind=False
+    else:
+        debugind=True
+    if args.interface:
+        interface = args.interface
+    else:
+        interface = 'afcreatecorpref'
+        
+    if interface =='afcreatecorpref':
+        arb = AfReferenceBuilder(debugind,'prod','corp')
+        arb.DoCorpRefTableLoad()

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.10.9.593" ExportMode="NoUniqueID" PISystem="ESPWPPIAF01" Database="UES" Description="UES" Created="2024-03-25T19:09:14.1202921Z" id="91c5ab78-1aae-4df9-a65a-bb4bee6ac614" ParentKey="cc56993d-ba9e-4b66-b2e0-d03ac1f3c6cb" ExportedObject="Device State" ExportedType="AFCategory" Identity="CategoryAttribute" PIPersist="193 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{8dae210f-95c7-4773-b75a-a388aac20be0}\CategoriesAttribute[{91c5ab78-1aae-4df9-a65a-bb4bee6ac614}]*ESPWPPIAF01\UES\CategoriesAttribute[Device State]">
+  <AFAttributeCategory>
+    <Name>Device State</Name>
+  </AFAttributeCategory>
+</AF>
